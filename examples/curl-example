@@ -1,0 +1,9 @@
+# Example: Create a Payment with curl
+
+```bash
+curl https://api.stripe.com/v1/charges \
+  -u sk_test_yourApiKey: \
+  -d amount=2000 \
+  -d currency=usd \
+  -d "source=tok_visa" \
+  -d "description=Test payment"
