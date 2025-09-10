@@ -1,0 +1,21 @@
+{{API Reference: Create a Charge
+
+Endpoint: 
+`POST /v1/charges`
+
+Request Parameters:
+- `amount` (integer, required) → Amount in cents (e.g., 2000 = $20).
+- `currency` (string, required) → Currency code (e.g., usd).
+- `source` (string, required) → Payment source, e.g. `tok_visa`.
+- `description` (string, optional) → Info about the charge.
+
+Response (200 OK):
+```json
+}}
+{
+  "id": "ch_1Example",
+  "object": "charge",
+  "amount": 2000,
+  "currency": "usd",
+  "status": "succeeded"
+}
